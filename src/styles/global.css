@@ -58,6 +58,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h2 {
+  font-size: clamp(2.5rem, 1.4786rem + 4.358vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.0025em;
+  color: white;
+}
+
 p {
   font-size: 0.8541rem + 0.62clamp (1rem, 26vw, 1.5rem);
   line-height: 1.6;
@@ -76,9 +84,9 @@ section {
 }
 
 .container {
-  max-width: 100em;
+  max-width: 68.88em;
   margin-inline: auto;
-  padding: calc(var(--container-padding) * 2);
+  padding: var(--container-padding);
   display: flex;
   justify-content: center;
   align-items: center;

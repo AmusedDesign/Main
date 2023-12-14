@@ -32,9 +32,18 @@ video {
 }
 
 html {
-  font-family: system-ui, sans-serif;
+  font-family: Eudoxus Sans, system-ui, sans-serif;
   background: #151516;
   color-scheme: dark light;
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: "EudoxusSans";
+  src: url("/fonts/EudoxusSans-medium.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
 }
 
 h1 {
@@ -55,6 +64,11 @@ p {
   color: white;
 }
 
+section {
+  position: relative;
+  overflow: clip;
+}
+
 .subheading {
   font-size: clamp(1.125rem, 0.7237rem + 1.7121vw, 2.5rem);
   line-height: 1.4;
@@ -68,4 +82,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10em;
+  padding-bottom: 7em;
 }

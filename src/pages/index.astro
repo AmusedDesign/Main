@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Tjenester from '../components/Tjenester.astro'
 
 // Import the <Image /> component
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 // Import a reference to the image itself
-import myImage from "../assets/mac-mockup-jobbox.jpg"
+import myImage from "../assets/iPad-Schipperke-treffet.jpg";
+
 ---
 
 <Layout title="Welcome to Amused.">
@@ -14,9 +16,20 @@ import myImage from "../assets/mac-mockup-jobbox.jpg"
 				<div class="heading-wrap">
 					<h1>AMUSED</h1>
 					<p class="subheading">Spektakulær merkevarebygging for ambisiøse bedrifter som ønsker å bli synlig på nett.</p>
-				</div>
 			</container>
+			<div class="blur-green">
+			</div>
+			<div class="blur-purple">
+			</div>
 		</section>
+		<section>
+								<Image
+						src={myImage}
+						alt="A very cool penguin!"
+						style="height: 100%; width: 100%; object-fit: cover;"
+					/>
+		</section>
+		<Tjenester />
 	</main>
 </Layout>
 
@@ -29,5 +42,25 @@ import myImage from "../assets/mac-mockup-jobbox.jpg"
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+	}
+
+	.blur-green {
+		position: absolute;
+		top: 0; left: 0;
+		width: 144.5em;
+		height: 73.5em;
+		background-color: #3BB1D0;
+		opacity: 9%;
+		filter: blur(1000px);
+	}
+
+	.blur-purple {
+		position: absolute;
+		bottom: 0; right: 0;
+		width: 144.5em;
+		height: 73.5em;
+		background-color: #6F6BEF;
+		opacity: 9%;
+		filter: blur(1000px);
 	}
 </style>

@@ -38,9 +38,10 @@ html {
 }
 
 h1 {
-  font-size: clamp(2rem, -3.2529rem + 22.4125vw, 20rem);
+  font-size: clamp(3.25rem, -1.6381rem + 20.856vw, 20rem);
   font-weight: 600;
   line-height: 1;
+  letter-spacing: -0.004em;
   color: white;
   background: var(--accent-gradient);
   background-clip: text;
@@ -55,8 +56,9 @@ p {
 }
 
 .subheading {
-  font-size: clamp(1.3125rem, 0.966rem + 1.4786vw, 2.5rem);
+  font-size: clamp(1.125rem, 0.7237rem + 1.7121vw, 2.5rem);
   line-height: 1.4;
+  text-wrap: balance;
 }
 
 .container {

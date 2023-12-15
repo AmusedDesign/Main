@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Tjenester from '../components/Tjenester.astro'
 import Cards from '../components/Cards.astro';
 
+// Import the <Image /> component
+import { Picture } from "astro:assets";
+// Import a reference to the image itself
+import myImage from "../assets/iPad-Schipperke-treffet.jpg";
 
 
 import myVideo from "../assets/cubertovideo.mp4";
@@ -24,9 +28,17 @@ import Marquee from '../components/Marquee.astro';
 			</div>
 		</section>
 		<section>
-			<video class="myVideo" playsinline autoplay loop muted id="myVideo">
+			<Picture
+                src={myImage}
+                widths={[400, 800, 1200]}
+                sizes="(max-width: 1600px) 100vw, 1200px"
+                alt="a portfolio"
+                aspectRatio={1200 / 500}
+				style="height: 100%; width: 100%; object-fit: cover;"
+              />
+			<!-- <video class="myVideo" playsinline autoplay loop muted id="myVideo">
   				<source src={myVideo} type="video/mp4">
-			</video>
+			</video> -->
 		</section>
 		<Tjenester />
 		<Marquee />

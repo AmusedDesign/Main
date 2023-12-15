@@ -12,7 +12,7 @@
                 <a class="link" href="/portfolio">Portfolio</a>
                 <a class="link" href="/om">Om</a>
                 <a class="link" href="/fordeler">Fordeler</a">
-            <a class="cta">Kontakt</a>
+            <div class="cta-wrap"><a class="cta">Kontakt</a></div>
         </div>
     </div>
 </div>
@@ -69,12 +69,25 @@
         color: #86868B;
     }
 
+    .cta {
+        padding: 12px 20px 12px 20px;
+        background: #2C2E3A;
+        border-radius: 100px;
+        cursor: pointer;
+
+        transition: ease-out 300ms;
+    }
+
 
 
     /* HOVER EFFECTS */
 
     .link:hover {
         opacity: 0.7;
+    }
+
+    .cta:hover {
+        background: var(--accent);
     }
 
 </style>

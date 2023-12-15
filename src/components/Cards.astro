@@ -1,0 +1,89 @@
+---
+
+---
+
+<div class="cards-wrapper">
+    <div class="grid">
+        <div class="card">
+            <div>
+                <h3 class="small-title">Moderne</h3>
+                <h4 class="big-title">Nettsider</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <h3 class="small-title">Sylskarp</h3>
+                <h4 class="big-title">Fotografi<h4>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <h3 class="small-title">Engasjerende</h3>
+                <h4 class="big-title">Videoer</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    .cards-wrapper {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns:
+            repeat(auto-fit, minmax(414px, 1fr));
+        gap: 40px;
+        grid-auto-flow: row;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #1C1C1F;
+        min-height: 388px;
+        border: solid var(--border);
+        border-width: 1px;
+        border-radius: 12px;
+    }
+
+    .small-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--text-light);
+    }
+
+    .big-title:nth-child(1) {
+        font-size: 68px;
+        font-weight: 700;
+        background: var(--accent-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .big-title:nth-child(2) {
+        font-size: 68px;
+        font-weight: 700;
+        background: var(--accent-gradient-green);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .big-title:nth-child(3) {
+        font-size: 68px;
+        font-weight: 700;
+        background: var(--accent-gradient-orange);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+</style>

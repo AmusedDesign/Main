@@ -1,12 +1,28 @@
 :root {
   /* Colors */
-  --accent: 136, 58, 234;
+  --accent: #3f46f3;
   --accent-light: 224, 204, 250;
   --accent-dark: 49, 10, 101;
+
   --accent-gradient: linear-gradient(91deg, #706af0 -0.4%, #3cb0d1 101.74%);
+  --accent-gradient-orange: linear-gradient(
+    91deg,
+    #f09837 -0.4%,
+    #f1a149 101.74%
+  );
+  --accent-gradient-green: linear-gradient(
+    91deg,
+    #9bd1a4 -0.4%,
+    #61b1a7 101.74%
+  );
+
+  --text-light: #f5f5f7;
 
   /* Padding */
   --container-padding: clamp(2.5em, 8vw, 8em);
+
+  /* Border */
+  --border: #2f2f2f;
 }
 
 *,

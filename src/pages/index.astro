@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Tjenester from '../components/Tjenester.astro'
+import Cards from '../components/Cards.astro';
 
 // Import the <Image /> component
 import { Image } from "astro:assets";
 // Import a reference to the image itself
 import myImage from "../assets/iPad-Schipperke-treffet.jpg";
 
-import myVideo from "../assets/RedRoomOnline.mp4";
+import myVideo from "../assets/cubertovideo.mp4";
 
 ---
 
@@ -29,12 +30,13 @@ import myVideo from "../assets/RedRoomOnline.mp4";
   				<source src={myVideo} type="video/mp4">
 			</video>
 			<Tjenester />
-				<Image
-					src={myImage}
-					alt="A very cool penguin!"
-					style="height: 100%; width: 100%; object-fit: cover;"
-				/>
-	</section>
+		</section>
+		<Image
+			src={myImage}
+			alt="A very cool penguin!"
+			style="height: 100%; width: 100%; object-fit: cover;"
+		/>
+
 	</main>
 </Layout>
 
@@ -53,6 +55,7 @@ import myVideo from "../assets/RedRoomOnline.mp4";
 		justify-content: center;
 		text-align: center;
 		z-index: 2;
+		margin-top: 7em;
 	}
 
 	.blur-green {

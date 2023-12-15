@@ -1,9 +1,11 @@
 ---
 import Cards from "./Cards.astro";
+import '../styles/global.css';
 ---
 
+
 <section>
-    <div class="container">
+    <div class="cards-container">
         <div class="h2-heading-wrap">
             <h2>Hva jeg tilbyr</h2>
             <p class="subheading">Fra slagkraftig strategi til moderne og engasjerende design. Amused handler jobber som ett team med kundene våre, og  menneskelig kreativitet.</p>
@@ -15,10 +17,15 @@ import Cards from "./Cards.astro";
 
 <style>
 
-    .container {
+    .cards-container {
+        max-width: 100em;
+        margin-inline: auto;
+        padding: var(--container-padding);
+        padding-top: 10em;
+        padding-bottom: 7em;
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 4em;
     }
 
     .h2-heading-wrap {
@@ -26,6 +33,8 @@ import Cards from "./Cards.astro";
         flex-direction: column;
         gap: 2em;
         text-align: center;
+        max-width: 68.88em;
+        margin-inline: auto;
     }
 
     .subheading {

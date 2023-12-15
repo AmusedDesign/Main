@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Import the <Image /> component
+import { Image } from "astro:assets";
+// Import a reference to the image itself
+import myImage from "../assets/iPad-Schipperke-treffet.jpg";
+
+---
+
+<Layout title="I am Amused.">
+    <Image
+                src={myImage}
+                alt="A very cool penguin!"
+                style="height: 100%; width: 100%; object-fit: cover;"
+            />
+
+</Layout>

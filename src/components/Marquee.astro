@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+---
+
+<section>
+    <div class="marquee-padding">
+        <div class="marquee">
+            <span><span class="marquee-1">AMUSED</span> DESIGN</span>
+            <span><span class="marquee-2">AMUSED</span> DESIGN</span>
+            <span><span class="marquee-3">AMUSED</span> DESIGN</span>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .marquee-padding {
+        padding-block: 10em;
+    }
+
+    .marquee {
+        display: flex;
+        gap: 6em;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    span{
+        font-size: clamp(4.25rem, 1.8424rem + 10.2724vw, 12.5rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        will-change: transform;
+        transform: translateX(0);
+        white-space: nowrap;
+        animation: marquee 24s linear infinite;
+    }    
+
+    .marquee-1 {
+        background: var(--accent-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marquee-2 {
+        background: var(--accent-gradient-orange);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marquee-3 {
+        background: var(--accent-gradient-green);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    @keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+</style>

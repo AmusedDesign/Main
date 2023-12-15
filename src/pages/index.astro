@@ -9,6 +9,7 @@ import { Image } from "astro:assets";
 import myImage from "../assets/iPad-Schipperke-treffet.jpg";
 
 import myVideo from "../assets/cubertovideo.mp4";
+import Marquee from '../components/Marquee.astro';
 
 ---
 
@@ -31,6 +32,7 @@ import myVideo from "../assets/cubertovideo.mp4";
 			</video>
 		</section>
 		<Tjenester />
+		<Marquee />
 		<Image
 			src={myImage}
 			alt="A very cool penguin!"

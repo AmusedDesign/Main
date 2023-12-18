@@ -18,9 +18,11 @@ import Marquee from '../components/Marquee.astro';
 	<main>
 		<section>
 			<container class="container">
-				<div class="heading-wrap">
-					<h1>AMUSED</h1>
-					<p class="subheading">Spektakulær merkevarebygging for ambisiøse bedrifter som ønsker å bli synlig på nett.</p>
+				<div class="heading-wrap-container">
+					<div class="heading-wrap">
+						<h1 class="home-hero-heading">AMUSED</h1>
+						<p class="subheading">Spektakulær merkevarebygging for ambisiøse bedrifter som ønsker å bli synlig på nett.</p>
+					</div>
 			</container>
 			<div class="blur-green">
 			</div>
@@ -33,7 +35,6 @@ import Marquee from '../components/Marquee.astro';
                 widths={[400, 800, 1200]}
                 sizes="(max-width: 1600px) 100vw, 1200px"
                 alt="a portfolio"
-                aspectRatio={1200 / 500}
 				style="height: 100%; width: 100%; object-fit: cover;"
               />
 			<!-- <video class="myVideo" playsinline autoplay loop muted id="myVideo">
@@ -87,4 +88,115 @@ import Marquee from '../components/Marquee.astro';
 		z-index: 1;
 
 	}
+
+
+
+  .heading-wrap {
+    -webkit-animation: fadeIn 0.4s ease backwards;
+    animation: fadeIn 0.4s ease backwards;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  .home-hero-subheading {
+    -webkit-animation: fadeIn 0.4s ease backwards;
+    animation: fadeIn 0.4s ease backwards;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  .home-hero-cta {
+    -webkit-animation: fadeIn 0.4s ease backwards;
+    animation: fadeIn 0.4s ease backwards;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+
+  .home-hero-logos {
+    -webkit-animation: fadeIn 0.4s ease backwards;
+    animation: fadeIn 0.4s ease backwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  .hero-scroll-wrap {
+    -webkit-animation: fadeInDisplay 0.4s ease backwards;
+    animation: fadeInDisplay 0.4s ease backwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(50px);
+    }
+    to {
+      opacity: auto;
+      -webkit-transform: translateY(0px);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: auto;
+      transform: translateY(0px);
+    }
+  }
+  @-webkit-keyframes fadeInDisplay {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+    }
+    to {
+      opacity: auto;
+      -webkit-transform: translateY(0px);
+    }
+  }
+  @keyframes fadeInDisplay {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: auto;
+      transform: translateY(0px);
+    }
+  }
+  .home-hero-heading {
+    background: linear-gradient(0deg, #6E6EEF 20%, rgba(17, 24, 28, 0) 55%),
+      linear-gradient(
+        90deg,
+        #6E6EEF 0%,
+        #44A7D6 33.7%,
+        #44A7D6 50%,
+        #11181c 100%
+      );
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 1.8s ease backwards;
+    animation: intro-gradient 1.8s ease backwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  @-webkit-keyframes intro-gradient {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  @keyframes intro-gradient {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+
 </style>
